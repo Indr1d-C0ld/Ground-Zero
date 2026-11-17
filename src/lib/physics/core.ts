@@ -1,5 +1,5 @@
 /**
- * Atlante — core effects physics.
+ * Ground Zero — core effects physics.
  *
  * Every function here is an educational approximation of curves published in the
  * open literature. Units: metres, seconds, kilotons (kt), psi for overpressure,

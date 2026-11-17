@@ -33,7 +33,7 @@ const D: Record<string, Dossier> = {
       ["Morti storiche", "Nell'ordine di 70–140 mila entro la fine del 1945"],
     ],
     more: [
-      "La mappa di Atlante usa la popolazione di Hiroshima oggi, non quella del 1945. Il numero di morti della scheda storica e quello calcolato sulla città attuale non vanno letti come la stessa cosa.",
+      "La mappa di Ground Zero usa la popolazione di Hiroshima oggi, non quella del 1945. Il numero di morti della scheda storica e quello calcolato sulla città attuale non vanno letti come la stessa cosa.",
       "Non ne fu costruita una serie. Dopo la guerra il tipo cannone fu giudicato ingombrante e poco sicuro da tenere armato, e l'arsenale americano prese un'altra strada.",
     ],
   },

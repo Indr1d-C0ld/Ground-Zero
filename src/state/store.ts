@@ -126,7 +126,7 @@ function presetScenario(id: string, base?: Scenario): Scenario {
 
 function loadSaved(): SavedScenario[] {
   try {
-    const raw = localStorage.getItem("atlante:saved");
+    const raw = (localStorage.getItem("groundzero:saved") ?? localStorage.getItem("atlante:saved"));
     return raw ? (JSON.parse(raw) as SavedScenario[]) : [];
   } catch {
     return [];
@@ -135,7 +135,7 @@ function loadSaved(): SavedScenario[] {
 
 function persistSaved(list: SavedScenario[]) {
   try {
-    localStorage.setItem("atlante:saved", JSON.stringify(list));
+    localStorage.setItem("groundzero:saved", JSON.stringify(list));
   } catch {
     /* storage unavailable */
   }
@@ -143,7 +143,7 @@ function persistSaved(list: SavedScenario[]) {
 
 function loadPrefs(): Partial<State> {
   try {
-    const raw = localStorage.getItem("atlante:prefs");
+    const raw = (localStorage.getItem("groundzero:prefs") ?? localStorage.getItem("atlante:prefs"));
     return raw ? (JSON.parse(raw) as Partial<State>) : {};
   } catch {
     return {};
@@ -268,7 +268,7 @@ export const useStore = create<State>((set, get) => ({
 useStore.subscribe((s, prev) => {
   if (s.layers !== prev.layers || s.styleId !== prev.styleId || s.units !== prev.units || s.theme !== prev.theme) {
     try {
-      localStorage.setItem("atlante:prefs", JSON.stringify({ layers: s.layers, styleId: s.styleId, units: s.units, theme: s.theme }));
+      localStorage.setItem("groundzero:prefs", JSON.stringify({ layers: s.layers, styleId: s.styleId, units: s.units, theme: s.theme }));
     } catch {
       /* ignore */
     }

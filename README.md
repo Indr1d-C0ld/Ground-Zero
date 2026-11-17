@@ -1,6 +1,6 @@
 <div align="center">
 
-# Atlante
+# Ground Zero
 
 **Osservatorio educativo sugli effetti delle armi nucleari**
 
@@ -36,13 +36,13 @@ Simulatore su mappa · Enciclopedia · Archivio storico · Dati
 
 ## Che cos'è
 
-Atlante mette su una mappa gli ordini di grandezza pubblicati in mezzo secolo di letteratura aperta sugli effetti delle armi nucleari: il manuale di Glasstone e Dolan, le approssimazioni di Brode, il rapporto dell'Office of Technology Assessment del 1979, la dosimetria di Hiroshima e Nagasaki, gli studi climatici di Robock, Toon e Xia.
+Ground Zero mette su una mappa gli ordini di grandezza pubblicati in mezzo secolo di letteratura aperta sugli effetti delle armi nucleari: il manuale di Glasstone e Dolan, le approssimazioni di Brode, il rapporto dell'Office of Technology Assessment del 1979, la dosimetria di Hiroshima e Nagasaki, gli studi climatici di Robock, Toon e Xia.
 
 È pensato per lo studio: capire **perché** uno scoppio in aria e uno al suolo producono conseguenze così diverse, perché il raggio cresce solo con la radice cubica della potenza, perché il fallout dipende dal vento più che dalla bomba, perché un rifugio cambia la sopravvivenza di ordini di grandezza. Ogni pannello del simulatore rimanda al capitolo dell'enciclopedia che spiega la fisica che c'è dietro.
 
 L'applicazione gira interamente nel browser. Le uniche chiamate in rete sono le tessere della mappa (Esri) e il meteo del punto (Open-Meteo); catalogo delle città, ordigni, testi e immagini viaggiano con la pagina.
 
-Il progetto nasce come evoluzione di uno studio precedente realizzato con Grok, conservato intatto in [`pre_asssets/grok-workspace/`](pre_asssets/grok-workspace/).
+Il progetto nasce come evoluzione di uno studio precedente realizzato con Grok, allora chiamato «Atlante», conservato intatto in [`pre_asssets/grok-workspace/`](pre_asssets/grok-workspace/).
 
 ## Il simulatore
 
@@ -78,7 +78,7 @@ Il progetto nasce come evoluzione di uno studio precedente realizzato con Grok, 
 - Sette basi cartografiche, anelli etichettati, curve di fallout (rateo a H+1 o dose accumulata), orizzonte EMP, mappa di calore delle vittime, cronologia animata del fronte d'urto e della ricaduta.
 - Unità metriche o anglosassoni, psi o kPa, Gy o rad; tema scuro e chiaro; interfaccia utilizzabile da telefono.
 
-<p align="center"><img src="docs/screenshots/10-mobile.jpg" alt="Atlante su telefono" width="300"></p>
+<p align="center"><img src="docs/screenshots/10-mobile.jpg" alt="Ground Zero su telefono" width="300"></p>
 
 ## Enciclopedia, storia, archivio
 
@@ -123,7 +123,7 @@ Tutte le formule sono approssimazioni di curve pubblicate. Unità: metri, second
 
 ## Verifiche sui casi storici
 
-| Caso | Atlante | Riferimento |
+| Caso | Ground Zero | Riferimento |
 |---|---|---|
 | 15 kt a 580 m, raggio dei 5 psi | 1,61 km | ≈ 1,6 km (Hiroshima) |
 | 1 Mt a quota ottimale, raggio dei 5 psi | 6,7 km | ≈ 7 km (Glasstone) |
@@ -152,8 +152,8 @@ npm run check:physics   # ricalcola i raggi e le vittime dei casi di riferimento
 Richiede Node.js 20 o successivo.
 
 ```bash
-git clone https://github.com/Indr1d-C0ld/atlante.git
-cd atlante
+git clone https://github.com/Indr1d-C0ld/ground-zero.git
+cd ground-zero
 npm install
 npm run dev        # http://127.0.0.1:5187
 ```
@@ -199,7 +199,7 @@ L'elenco completo, capitolo per capitolo, è nell'enciclopedia dell'applicazione
 
 ## Licenze e crediti
 
-- **Codice e testi**: © gli autori di Atlante, rilasciati sotto [GNU General Public License v3.0 o successiva](LICENSE).
+- **Codice e testi**: © gli autori di Ground Zero, rilasciati sotto [GNU General Public License v3.0 o successiva](LICENSE).
 - **Immagini** (`public/media/`): non coperte dalla GPL. Ognuna conserva la propria licenza, in gran parte pubblico dominio (opere del governo statunitense: NARA, DOE/NNSA, Dipartimento della Difesa), più alcune CC0, CC BY e CC BY-SA. Autore, licenza e fonte sono indicati in [`src/data/gallery.json`](src/data/gallery.json), [`src/data/photos.ts`](src/data/photos.ts) e sotto ogni immagine nell'applicazione.
 - **Città**: [GeoNames](https://www.geonames.org/) cities15000, CC BY 4.0.
 - **Meteo e quota**: [Open-Meteo](https://open-meteo.com/), CC BY 4.0.

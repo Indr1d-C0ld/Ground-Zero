@@ -45,7 +45,7 @@ export const MAP_STYLES: { id: MapStyleId; label: string; url: string; labels?: 
     maxNative: 13,
   },
   { id: "rilievo", label: "Topografica", url: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}", attr: "© Esri, HERE, Garmin, FAO, NOAA, USGS", maxNative: 19 },
-  { id: "atlas", label: "Atlante", url: "https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}", attr: "© Esri, National Geographic", maxNative: 16 },
+  { id: "atlas", label: "National Geographic", url: "https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}", attr: "© Esri, National Geographic", maxNative: 16 },
 ];
 
 export const FALLOUT_COLORS = ["#4b5d1f", "#6f8424", "#98a83a", "#c3c865", "#e3df9c", "#f1efcc", "#f7f6e6"];

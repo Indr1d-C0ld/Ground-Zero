@@ -34,7 +34,7 @@ export function App() {
           <div className="flex min-w-0 items-center gap-2.5">
             <Logo />
             <div className="min-w-0 max-sm:hidden">
-              <p className="font-serif text-[21px] leading-none tracking-tight">Atlante</p>
+              <p className="font-serif text-[21px] leading-none tracking-tight">Ground Zero</p>
               <p className="hidden truncate text-[11px] text-muted md:block">Osservatorio sugli effetti delle armi nucleari · stime educative, non previsioni</p>
             </div>
           </div>

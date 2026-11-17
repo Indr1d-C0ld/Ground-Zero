@@ -1,4 +1,4 @@
-// Enciclopedia di Atlante.
+// Enciclopedia di Ground Zero.
 // Contenuto educativo in italiano: effetti, fisica degli effetti, storia, politica e medicina.
 // Nessun dettaglio di progetto, materiali o assemblaggio di armi.
 // I numeri sono valori pubblici consolidati; dove le fonti divergono il testo dà una forbice.
@@ -301,7 +301,7 @@ export const CHAPTERS: Chapter[] = [
       },
       {
         t: "p",
-        text: "Per ogni livello di sovrapressione esiste una quota di scoppio che lo porta più lontano. Per i 5 psi, nel fit di Brode usato da Atlante, è circa 276 m × Y^(1/3) (Y in kt): circa 680 m per 15 kt, 2,8 km per 1 Mt. Livelli più alti richiedono quote più basse. Hiroshima esplose a circa 580–600 m, Nagasaki a circa 500 m: quote vicine all'ottimo per i danni urbani.",
+        text: "Per ogni livello di sovrapressione esiste una quota di scoppio che lo porta più lontano. Per i 5 psi, nel fit di Brode usato da Ground Zero, è circa 276 m × Y^(1/3) (Y in kt): circa 680 m per 15 kt, 2,8 km per 1 Mt. Livelli più alti richiedono quote più basse. Hiroshima esplose a circa 580–600 m, Nagasaki a circa 500 m: quote vicine all'ottimo per i danni urbani.",
       },
       { t: "h", text: "Danni agli edifici" },
       {
@@ -979,7 +979,7 @@ export const CHAPTERS: Chapter[] = [
       },
       {
         t: "p",
-        text: "Atlante non calcola il clima. Scala la fuliggine, con un fattore largo, sull'area urbana che può bruciare, e sotto qualche centesimo di teragrammo dice semplicemente che un inverno nucleare non nasce da un singolo scoppio.",
+        text: "Ground Zero non calcola il clima. Scala la fuliggine, con un fattore largo, sull'area urbana che può bruciare, e sotto qualche centesimo di teragrammo dice semplicemente che un inverno nucleare non nasce da un singolo scoppio.",
       },
       { t: "figures", topic: "diagrammi" },
     ],
@@ -1157,7 +1157,7 @@ export const CHAPTERS: Chapter[] = [
       { t: "h", text: "Il dibattito" },
       {
         t: "p",
-        text: "Se i bombardamenti siano stati necessari per la resa del Giappone, annunciata il 15 agosto, è una delle questioni più discusse della storiografia del Novecento. Pesarono anche la dichiarazione di guerra sovietica dell'8 agosto e l'invasione della Manciuria. Atlante non prende posizione: mostra che cosa fecero e che cosa farebbero oggi armi simili su una mappa contemporanea.",
+        text: "Se i bombardamenti siano stati necessari per la resa del Giappone, annunciata il 15 agosto, è una delle questioni più discusse della storiografia del Novecento. Pesarono anche la dichiarazione di guerra sovietica dell'8 agosto e l'invasione della Manciuria. Ground Zero non prende posizione: mostra che cosa fecero e che cosa farebbero oggi armi simili su una mappa contemporanea.",
       },
       { t: "figures", topic: "hiroshima" },
       { t: "figures", topic: "nagasaki" },
@@ -1427,7 +1427,7 @@ export const CHAPTERS: Chapter[] = [
   {
     id: "modello",
     part: "Il modello",
-    title: "Come leggere Atlante",
+    title: "Come leggere Ground Zero",
     kicker: "Che cosa calcola la mappa, e con quali approssimazioni",
     summary:
       "I modelli dietro i cerchi: Brode per l'onda d'urto, Glasstone per il calore, la dose pronta, il pennacchio di fallout, le curve di mortalità, la nube, l'orizzonte dell'EMP e la fascia di incertezza.",
@@ -1435,7 +1435,7 @@ export const CHAPTERS: Chapter[] = [
     blocks: [
       {
         t: "p",
-        text: "Atlante mette su una mappa gli ordini di grandezza dei manuali pubblici. Non è una previsione e non è un piano: è un modo per vedere, su luoghi familiari, la scala di fenomeni che altrimenti restano numeri astratti. Questo capitolo elenca i modelli e i loro limiti.",
+        text: "Ground Zero mette su una mappa gli ordini di grandezza dei manuali pubblici. Non è una previsione e non è un piano: è un modo per vedere, su luoghi familiari, la scala di fenomeni che altrimenti restano numeri astratti. Questo capitolo elenca i modelli e i loro limiti.",
       },
       { t: "h", text: "Onda d'urto" },
       {
