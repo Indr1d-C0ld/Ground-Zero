@@ -156,6 +156,7 @@ export function MapView() {
         labelTiles = style.labels ? L.tileLayer(style.labels, { pane: "labels", maxZoom: 19, maxNativeZoom: style.maxNative }).addTo(map!) : null;
       };
 
+      map.on("zoomend", () => draw());
       map.on("click", (ev) => {
         const s = useStore.getState();
         const { lat, lng } = ev.latlng;
@@ -220,8 +221,13 @@ export function MapView() {
             })
               .bindTooltip(`<b>${r.label}</b> · ${formatDist(r.radiusM, s.units)}`, { sticky: true, className: "atl-tip" })
               .addTo(effectsLayer);
-            if (lay.labels && isActive && r.radiusM > 0) {
-              const bearing = r.group === "blast" ? 90 : r.group === "thermal" ? 135 : r.group === "radiation" ? 225 : r.group === "emp" ? 0 : 45;
+            // metres per screen pixel at this latitude and zoom: hide labels of rings too small to read
+            const mpp = (156_543.03 * Math.cos((e.det.lat * Math.PI) / 180)) / 2 ** map.getZoom();
+            if (lay.labels && isActive && r.radiusM / mpp > 34) {
+              // stagger labels of the same family around the circle so they never stack
+              const k = rings.filter((x) => x.group === r.group && x.radiusM / mpp > 34).findIndex((x) => x.id === r.id);
+              const base = r.group === "blast" ? 62 : r.group === "thermal" ? 148 : r.group === "radiation" ? 236 : r.group === "emp" ? 0 : 320;
+              const bearing = (base + Math.max(0, k) * 17) % 360;
               const p = destination(e.det.lat, e.det.lon, bearing, r.radiusM);
               const marker = L.circleMarker(p, { radius: 0, opacity: 0, fillOpacity: 0, interactive: false }).addTo(effectsLayer);
               marker.bindTooltip(r.group === "blast" ? r.short : r.short.replace("Ustioni di ", "").replace("Radiazione pronta ", ""), {

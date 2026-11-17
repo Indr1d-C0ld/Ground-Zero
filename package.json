@@ -2,6 +2,8 @@
   "name": "atlante",
   "private": true,
   "version": "2.0.0",
+  "description": "Osservatorio educativo sugli effetti delle armi nucleari: simulatore su mappa, enciclopedia, archivio storico.",
+  "license": "GPL-3.0-or-later",
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 5187 --strictPort",
