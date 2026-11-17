@@ -1,0 +1,101 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --color-bg: #12110f;
+  --color-surface: #1c1a16;
+  --color-surface-2: #26231e;
+  --color-fg: #ebe6dc;
+  --color-muted: #a39b8e;
+  --color-ember: #d08a45;
+  --color-ember-dim: #8a5a2c;
+  --color-line: #3a342c;
+  --color-paper: #efe8dc;
+  --color-ink: #1a1612;
+  --font-sans: "Outfit", "Avenir Next", "Segoe UI", sans-serif;
+  --font-serif: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.15rem;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  ::selection {
+    background: #d08a45;
+    color: #1a1612;
+  }
+}
+
+input[type="range"] {
+  accent-color: var(--color-ember);
+  width: 100%;
+  height: 1.75rem;
+}
+
+.leaflet-container {
+  background: #1a1814;
+  font-family: var(--font-sans);
+  height: 100%;
+  width: 100%;
+}
+
+.leaflet-control-attribution {
+  background: rgba(18, 17, 15, 0.82) !important;
+  color: #a39b8e !important;
+  font-size: 10px !important;
+  max-width: 16rem;
+}
+
+.leaflet-control-attribution a {
+  color: #d08a45 !important;
+}
+
+.leaflet-bar a,
+.leaflet-bar a:hover {
+  background: #1c1a16 !important;
+  color: #ebe6dc !important;
+  border-bottom-color: #3a342c !important;
+}
+
+.gz-mark {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  border: 2px solid #efe8dc;
+  background: #d08a45;
+  box-shadow: 0 0 0 6px rgba(208, 138, 69, 0.25);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

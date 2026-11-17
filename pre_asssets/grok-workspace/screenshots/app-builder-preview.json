@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Atlante",
+      "hasCanvas": false,
+      "bodyTextLen": 4910,
+      "bodyTextHash": "c00c431b115e6621f0d377819deaa26c0f1f587623d3aef88f727080afdd5079",
+      "bodyTextPrefix": "Atlante Effetti di una detonazione. Stime educative, non una pre",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Atlante",
+      "hasCanvas": false,
+      "bodyTextLen": 240,
+      "bodyTextHash": "0ec32b770120ef60b922ccb4558f9d045e6a8ea664e9fef258887539690c9c29",
+      "bodyTextPrefix": "Atlante Effetti di una detonazione. Stime educative, non una pre",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

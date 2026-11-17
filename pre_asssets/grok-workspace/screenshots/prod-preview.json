@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Atlante",
+      "hasCanvas": false,
+      "bodyTextLen": 4910,
+      "bodyTextHash": "c00c431b115e6621f0d377819deaa26c0f1f587623d3aef88f727080afdd5079",
+      "bodyTextPrefix": "Atlante Effetti di una detonazione. Stime educative, non una pre",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/prod-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Atlante",
+      "hasCanvas": false,
+      "bodyTextLen": 230,
+      "bodyTextHash": "942e077141fdcdc9beb199b98eba19882441c4491c80dd347389c098b83cd527",
+      "bodyTextPrefix": "Atlante Effetti di una detonazione. Stime educative, non una pre",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/prod-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/prod-preview.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
