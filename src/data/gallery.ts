@@ -1,4 +1,5 @@
 import { PHOTOS } from "@/data/photos";
+import { asset } from "@/lib/asset";
 
 export type GalleryItem = {
   id: string;
@@ -18,7 +19,7 @@ export type GalleryItem = {
 
 // gallery.json is produced by the image research pass; tolerate its absence.
 const mods = import.meta.glob<{ default: GalleryItem[] }>("./gallery.json", { eager: true });
-const extra: GalleryItem[] = Object.values(mods).flatMap((m) => m.default ?? []);
+const extra: GalleryItem[] = Object.values(mods).flatMap((m) => (m.default ?? []).map((g) => ({ ...g, src: asset(g.src) })));
 
 const PHOTO_TOPICS: Record<string, string[]> = {
   "little-boy": ["hiroshima", "manhattan"],

@@ -1,3 +1,5 @@
+import { asset } from "@/lib/asset";
+
 export type PhotoKind = "dispositivo" | "vettore" | "prova";
 
 export type ArchivePhoto = {
@@ -207,6 +209,9 @@ export const PHOTOS: Record<string, ArchivePhoto> = {
     credit: "Dominio pubblico. Charles Levy, US Army Air Forces, 9 agosto 1945.",
   },
 };
+
+// Public files are served under the deploy base path.
+for (const p of Object.values(PHOTOS)) p.src = asset(p.src);
 
 export function photosById(ids: string[] | undefined): ArchivePhoto[] {
   if (!ids) return [];
