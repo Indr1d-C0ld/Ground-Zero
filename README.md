@@ -152,8 +152,8 @@ npm run check:physics   # ricalcola i raggi e le vittime dei casi di riferimento
 Richiede Node.js 20 o successivo.
 
 ```bash
-git clone https://github.com/Indr1d-C0ld/ground-zero.git
-cd ground-zero
+git clone https://github.com/Indr1d-C0ld/Ground-Zero.git
+cd Ground-Zero
 npm install
 npm run dev        # http://127.0.0.1:5187
 ```
@@ -205,3 +205,13 @@ L'elenco completo, capitolo per capitolo, è nell'enciclopedia dell'applicazione
 - **Meteo e quota**: [Open-Meteo](https://open-meteo.com/), CC BY 4.0.
 - **Tessere cartografiche**: © Esri e fornitori; uso soggetto ai termini di servizio Esri.
 - **Font**: Outfit, Newsreader, JetBrains Mono, SIL Open Font License.
+
+## Dove gira
+
+Pubblicato su Balthasar, il server di casa: **https://timrouter.dns.army/ground-zero/**. Per aggiornarlo:
+
+```bash
+bash deploy/pubblica.sh     # build sotto /ground-zero/, rsync, verifica della versione pubblicata
+```
+
+La prima installazione della cartella e della configurazione di Apache è in `deploy/installa-balthasar.sh` (richiede root).
