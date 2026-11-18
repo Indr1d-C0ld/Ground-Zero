@@ -29,7 +29,7 @@ JSON
 echo "   versione $VERSION ($COMMIT$([[ $SPORCO == true ]] && echo ', modifiche non committate'))"
 
 echo "== rsync verso $HOST:$DEST =="
-rsync -az --delete --delay-updates $DRY \
+rsync -rltz --delete --delay-updates $DRY \
   --chmod=D2775,F0664 \
   --exclude '.DS_Store' \
   dist/ "$HOST:$DEST/"
